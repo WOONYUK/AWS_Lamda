@@ -2,8 +2,8 @@ import datetime
 import time
 import boto3
 
-log_group_name_general = 'S-ADLog'
-s3_bucket_name = 'snaadlog'
+log_group_name_general = 'CloudWatchロググループ名'
+s3_bucket_name = 'S3バケット名'
 s3_prefix_general = 'logs'  + '/%s' % (datetime.date.today().strftime("%Y")) + '/%s' % (datetime.date.today().strftime("%m")) + '/%s' % (datetime.date.today().strftime("%d"))
 
 def get_from_timestamp():
